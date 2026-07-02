@@ -1,0 +1,35 @@
+<html>
+  <head> 
+  <title>Music Chart</title> 
+    <style>
+      body{
+        background-color: #78d7e3;
+      }
+    </style> 
+      <script src="https://cdn.plot.ly/plotly-3.6.0.min.js" charset="utf-8"></script>
+  </head> 
+  <body>
+    <center>
+      <h1>My Favorite Songs</h1> 
+      <div id="plot"></div> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/lcOxhH8N3Bo?si=vO7jeNpxS18TwD4Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cf_sX9TqGVU?si=ySZtqxvu67vxn1xo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/60ItHLz5WEA?si=wX_RVbvKlzUaHSCg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p><a href="index.html">Return To The Home Page</a></p>
+      <hr> 
+      <p>&copy; STEM PREP 2026</p>
+    </center>
+    <script>
+      var songs = ["Total Eclipse of the Heart", "Headlights slowed + reverb", "Faded"]; 
+      var views = [1352615323, 3900000, 3900000000]; 
+      var trace = {
+        x: songs, 
+        y: views, 
+        type: "bar"
+      }; 
+      var data = [trace]; 
+      var layout = {title: "My Favorite Songs"}; 
+      Plotly.nowPlot("plot", data, layout);
+    </script>
+  </body>
+</html>
