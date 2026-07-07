@@ -7,5 +7,5 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 var cpccmarker = L.marker(cpcc, {title:"CPCC Center Campus"}).bindPopup(
-    "<p>CPCC Central Campus</p>"
+    "<p>CPCC Central Campus</p><br><a href= 'https://www.cpcc.edu'>Visit cpcc.edu</a>"
 ).addTo(map);
