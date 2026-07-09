@@ -1,6 +1,6 @@
 //40.749191° N, -73.967590° W 
 var coordinates =[40.749191, -73.967590]; 
-var popoupcode =`<center>
+var popupcode =`<center>
 <h3>Hello from the Maldives!</h3> 
 <iframe width="200" height="100" src="https://www.youtube.com/embed/vQ-IkgCCxq4?si=kLb7Sssu-YjMQq-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center>`;
