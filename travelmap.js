@@ -5,4 +5,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map); 
-L.marker(coordinates, {"title": "First Look At International Policies"}).bindPopup("<p> Welcome to the UN Building!</p>").addTo(map);
+L.circle(coordinates, {"title": "Welcome to the UN Building!",
+                      color: "black", 
+                      fillcolor: "#243eed", 
+                      radius: 90}).bindPopup("<p> Welcome to the UN Building!</p>").addTo(map);
